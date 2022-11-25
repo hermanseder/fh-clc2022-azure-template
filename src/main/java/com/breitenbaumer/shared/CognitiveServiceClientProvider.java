@@ -10,13 +10,13 @@ import com.azure.core.http.HttpResponse;
 import com.azure.core.http.netty.NettyAsyncHttpClientBuilder;
 import com.azure.core.util.UrlBuilder;
 
-public class CognitiveService {
+public class CognitiveServiceClientProvider {
     private Logger logger;
     private String endpoint = "westeurope.api.cognitive.microsoft.com";
     private String subscriptionKeyEnvVarName = "SUBSCRIPTIONKEY";
     private String endpointPath = "vision/v3.2/analyze";
 
-    public CognitiveService(Logger logger) {
+    public CognitiveServiceClientProvider(Logger logger) {
         this.logger = logger;
     }
 
